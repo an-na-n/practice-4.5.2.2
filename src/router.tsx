@@ -28,6 +28,5 @@ export const router = createHashRouter(
         errorElement={<NotFoundPage />}
       />
     </>
-  ),
-  { basename: "/practice-4.5.2.2" }
+  )
 );
