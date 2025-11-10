@@ -1,5 +1,5 @@
 import {
-  createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
   Navigate,
   Route,
@@ -9,7 +9,7 @@ import { VacanciesList } from "./components/vacancies_list/VacanciesList";
 import { VacancyPage } from "./pages/vacancy_page/VacancyPage";
 import { NotFoundPage } from "./pages/notfound_page/NotFoundPage";
 
-export const router = createBrowserRouter(
+export const router = createHashRouter(
   createRoutesFromElements(
     <>
       <Route
