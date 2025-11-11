@@ -1,5 +1,5 @@
 import {
-  createHashRouter,
+  createBrowserRouter,
   createRoutesFromElements,
   Navigate,
   Route,
@@ -9,7 +9,7 @@ import { VacanciesList } from "./components/vacancies_list/VacanciesList";
 import { VacancyPage } from "./pages/vacancy_page/VacancyPage";
 import { NotFoundPage } from "./pages/notfound_page/NotFoundPage";
 
-export const router = createHashRouter(
+export const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route
@@ -28,5 +28,6 @@ export const router = createHashRouter(
         errorElement={<NotFoundPage />}
       />
     </>
-  )
+  ),
+  { basename: "/practice-4.5.2.2" }
 );
